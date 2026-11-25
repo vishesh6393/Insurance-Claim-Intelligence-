@@ -320,7 +320,7 @@ function App() {
               {result.top_reasons.map((r, i) => (
                 <li key={i} className={r.impact > 0 ? "up" : "down"}>
                   <span className="reason-feature">{r.feature}</span>
-                  <span className="reason-direction">{r.direction}</span>
+                  <span className="reason-direction">{r.impact > 0 ? "+" : "-"}{r.impact_pct}% {r.impact > 0 ? "↑ suspicious" : "↓ normal"}</span>
                 </li>
               ))}
             </ul>

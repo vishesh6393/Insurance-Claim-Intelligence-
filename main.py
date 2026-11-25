@@ -86,6 +86,7 @@ def predict(claim: ClaimInput):
         top_reasons.append({
             "feature": clean_name,
             "impact": round(float(impact), 4),
+            "impact_pct": round(abs(float(impact)) * 100, 1),
             "direction": "↑ suspicious" if impact > 0 else "↓ normal"
         })
 
