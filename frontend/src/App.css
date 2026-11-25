@@ -144,3 +144,54 @@ button:disabled {
 .no-fraud h2 {
   color: #16a34a;
 }
+
+.reasons {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.reasons h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.reasons ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reasons li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.reasons li.up {
+  background: #fef2f2;
+  border-left: 3px solid #f87171;
+}
+
+.reasons li.down {
+  background: #f0fdf4;
+  border-left: 3px solid #86efac;
+}
+
+.reason-feature {
+  font-weight: 500;
+  color: #333;
+}
+
+.reason-direction {
+  font-size: 0.8rem;
+  color: #666;
+}
+
